@@ -1,4 +1,4 @@
-__author__ = 'liran'
+__author__ = 'Liran & Rotem '
 import socket
 import sys
 import thread

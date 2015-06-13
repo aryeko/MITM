@@ -1,4 +1,4 @@
-__author__ = 'liran'
+__author__ = 'Liran & Rotem '
 
 from Crypto.PublicKey import RSA
 from Crypto import Random
@@ -16,4 +16,3 @@ class RSAHandler:
     @staticmethod
     def get_dec_message(private_key, enc_message):
         return private_key.decrypt(enc_message)
-
