@@ -8,6 +8,15 @@ class RSAHandler:
     def __init__(self):
         self.my_key = RSA.generate(1024, Random.new().read)
         self.public_key = self.my_key.publickey()
+        self.dst_public_key = None
+
+    @property
+    def dst_public_key(self):
+        return self.dst_public_key
+
+    @dst_public_key.setter
+    def dst_public_key(self, dst_public_key):
+        self.dst_public_key = dst_public_key
 
     @staticmethod
     def get_enc_message(message, public_key):
